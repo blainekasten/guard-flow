@@ -1,4 +1,3 @@
-require "guard/flow/version"
 require 'guard/compat/plugin'
 
 module Guard
@@ -34,34 +33,6 @@ module Guard
       system('flow stop')
     end
 
-    # Called when `reload|r|z + enter` is pressed.
-    # This method should be mainly used for "reload" (really!) actions like reloading passenger/spork/bundler/...
-    #
-    # @raise [:task_has_failed] when reload has failed
-    # @return [Object] the task result
-    #
-    def reload
-    end
-
-    # Called when just `enter` is pressed
-    # This method should be principally used for long action like running all specs/tests/...
-    #
-    # @raise [:task_has_failed] when run_all has failed
-    # @return [Object] the task result
-    #
-    def run_all
-      system('flow')
-    end
-
-    # Called on file(s) additions that the Guard plugin watches.
-    #
-    # @param [Array<String>] paths the changes files or paths
-    # @raise [:task_has_failed] when run_on_additions has failed
-    # @return [Object] the task result
-    #
-    def run_on_additions(paths)
-      system('flow')
-    end
 
     # Called on file(s) modifications that the Guard plugin watches.
     #
@@ -71,16 +42,6 @@ module Guard
     #
     def run_on_modifications(paths)
       puts 'is this running??'
-      system('flow')
-    end
-
-    # Called on file(s) removals that the Guard plugin watches.
-    #
-    # @param [Array<String>] paths the changes files or paths
-    # @raise [:task_has_failed] when run_on_removals has failed
-    # @return [Object] the task result
-    #
-    def run_on_removals(paths)
       system('flow')
     end
 
