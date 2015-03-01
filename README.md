@@ -2,6 +2,8 @@
 
 Simple Guard wrapper for running Flow checks.
 
+This gem does not strip Flow out of your code for asset compilation, but only runs the Flow checker and informs you of the current status of your Flow typed javascript.
+
 ## Installation
 
 Add this line to your application's Gemfile:
