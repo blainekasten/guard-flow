@@ -70,6 +70,7 @@ module Guard
     # @return [Object] the task result
     #
     def run_on_modifications(paths)
+      puts 'is this running??'
       system('flow')
     end
 
