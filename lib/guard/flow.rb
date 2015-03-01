@@ -22,7 +22,7 @@ module Guard
     # @return [Object] the task result
     #
     def start
-      `flow start`
+      system('flow start')
     end
 
     # Called when `stop|quit|exit|s|q|e + enter` is pressed (when Guard quits).
@@ -31,7 +31,7 @@ module Guard
     # @return [Object] the task result
     #
     def stop
-      `flow stop`
+      system('flow stop')
     end
 
     # Called when `reload|r|z + enter` is pressed.
@@ -50,7 +50,7 @@ module Guard
     # @return [Object] the task result
     #
     def run_all
-      `flow`
+      system('flow')
     end
 
     # Called on file(s) additions that the Guard plugin watches.
@@ -60,7 +60,7 @@ module Guard
     # @return [Object] the task result
     #
     def run_on_additions(paths)
-      `flow`
+      system('flow')
     end
 
     # Called on file(s) modifications that the Guard plugin watches.
@@ -70,7 +70,7 @@ module Guard
     # @return [Object] the task result
     #
     def run_on_modifications(paths)
-      `flow`
+      system('flow')
     end
 
     # Called on file(s) removals that the Guard plugin watches.
@@ -80,7 +80,7 @@ module Guard
     # @return [Object] the task result
     #
     def run_on_removals(paths)
-      `flow`
+      system('flow')
     end
 
   end
