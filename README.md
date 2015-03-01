@@ -1,6 +1,6 @@
 # Guard::Flow
 
-TODO: Write a gem description
+Simple Guard wrapper for running Flow checks.
 
 ## Installation
 
@@ -15,10 +15,8 @@ And then execute:
 Or install it yourself as:
 
     $ gem install guard-flow
-
-## Usage
-
-TODO: Write usage instructions here
+    
+Install the Flow binaries. Checkout this [documentation](http://flowtype.org/docs/getting-started.html) to figure out how to install Flow.
 
 ## Contributing
 
