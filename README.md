@@ -18,6 +18,11 @@ Or install it yourself as:
 
     $ gem install guard-flow
     
+Run the Guard init CLI tool to append the flow check on javascript files:
+
+    $ guard init flow
+    
+    
 Install the Flow binaries. Checkout this [documentation](http://flowtype.org/docs/getting-started.html) to figure out how to install Flow.
 
 ## Contributing
